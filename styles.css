@@ -110,6 +110,13 @@ button:hover {
 
 .navbar ul {
     z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 100%
 }
 
 
@@ -119,11 +126,17 @@ button:hover {
 }
 
 
-.navbar ul li a { 
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color:#3e3377;
+  text-align: center;
+  padding: 50;
 }
 
 
 .navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 
